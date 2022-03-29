@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--links css-->
+    <link rel="stylesheet" href="index.css">
+    <link href="http://fonts.cdnfonts.com/css/tw-cen-mt-condensed" rel="stylesheet">
+    <link rel="stylesheet" href="class.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="pageHeader">header</header>
+    <!--this is container in middle-->
+    <article id="mainArticle">
+        <!--this container is on background color blue: holds as a header-->
+        <div class="top">
+            <!--the book icon-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+          </svg>
+            <!--the title of page-->
+            <h1 style="margin-left: 10px;">My Classes</h1>
+            <!--#################################################-->
+            <!--this container holds the 3dot and action btn-->
+            <div class="float-right">
+                <!--the 3 dot on the header-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>
+                <!--action btn-->
+                <button type="button" class="actionBtn" style="font-family: Arial, Helvetica, sans-serif; border-radius: 50px; height: fit-content; padding: 5px;">
+            <!--this is the plus icon-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+              <!--this is the name of the action btn-->
+              Action
+            </button>
+            </div>
+            <!--#################################################-->
+            <!--this container is for grid, list icons and searchbar and also filter-->
+            <div class="container" style="background-color: transparent;">
+
+                <!--this div is for grid and list icons-->
+                <div class="icon" style="background-color: transparent; color: #ccc;">
+                    <!--list icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list-task active" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+                  <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+                  <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+                </svg>
+                    <!--grid icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                </svg>
+                </div>
+
+                <!--searchbar with icons-->
+                <div class="searchBar" style="background-color: transparent;margin-left: 150px;">
+                    <!--this icon is a button-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                    <!--search bar text-->
+                    <input type="text" placeholder="Search classes" style="border: none; border-bottom: 1px solid #ccc;">
+                </div>
+                <!--#################################################-->
+                <!--for filter with select option-->
+                <div class="sort" style="background-color: transparent;color: #ccc; margin-left: 100px;">
+                    <!--filter name-->
+                    <label style="color: #ccc;" for="filter">Filter</label>
+                    <!--selection option: this is set on the default-->
+                    <select aria-label="filter" name="filter" id="sort">
+                      <option value="All">All Classes</option>
+                      <option value="class">Classes</option>
+                      <option value="withdraw">Withdraw</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--this container holds the whole classes sub -->
+            <div class="class-container">
+                <!--################### CONTANER 1 ##############################-->
+                <!--container for classes-->
+                <div class="project-container">
+                    <!--this will show on the top of container-->
+                    <div class="project">
+                        <!--top-menu///color bar-->
+                        <div class="colorBar1"></div>
+                        <div class="top-menu">
+                            <!--the 3 dot on the right side of container-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg>
+                        </div>
+                        <!--profile-->
+                        <img src="profile1.jpg" class="profile1" alt="">
+                        <!--label as teachers name-->
+                        <label for="teacherName" class="project-mentor">Mr. John Doe</label>
+                    </div>
+                    <!--this is the details of sub. this will show on the bottom of the container-->
+                    <!--title of sub-->
+                    <h3 name="project-title">INFORMATION COMMUNICATION AND TECHNOLOGY</h3>
+                    <!--additional bottom-->
+                    <div class="project-info">
+                        <div class="detail">
+                            <!--notif sign: this will show the new post-->
+                            <p id="counterPost">3</p>
+                            <!--the schedule of each classes-->
+                            <p name="schedule">Date:<span value="week">T TH S</span>-<span value="time">04:00 - 05:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--###################### CONTAINER 2 ##########################-->
+                <div class="project-container">
+                    <!--this will show on the top of container-->
+                    <div class="project">
+                        <!--top-menu///color bar-->
+                        <div class="colorBar2"></div>
+                        <div class="top-menu">
+                            <!--the 3 dot on the right side of container-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg>
+                        </div>
+                        <!--profile-->
+                        <img src="profile2.jpg" class="profile2" alt="">
+                        <!--label as teachers name-->
+                        <label for="teacherName" class="project-mentor">Mr. John Doe</label>
+                    </div>
+                    <!--this is the details of sub. this will show on the bottom of the container-->
+                    <!--title of sub-->
+                    <h3 name="project-title">SE1-Software Engineering 1 1/3 2nd trime_Cainta Campus</h3>
+                    <!--additional bottom-->
+                    <div class="project-info">
+                        <div class="detail">
+                            <!--notif sign: this will show the new post-->
+                            <!-- <p id="counterPost 2">3</p> -->
+                            <!--the schedule of each classes-->
+                            <p name="schedule">Date:<span value="week">T TH S</span>-<span value="time">04:00 - 05:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--################### CONTAINER 3 ############################-->
+                <div class="project-container">
+                    <!--this will show on the top of container-->
+                    <div class="project">
+                        <!--top-menu///color bar-->
+                        <div class="colorBar3"></div>
+                        <div class="top-menu">
+                            <!--the 3 dot on the right side of container-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg>
+                        </div>
+                        <!--profile-->
+                        <img src="profile3.Jpg" class="profile3" alt="">
+                        <!--label as teachers name-->
+                        <label for="teacherName" class="project-mentor">Mrs. John Doe</label>
+                    </div>
+                    <!--this is the details of sub. this will show on the bottom of the container-->
+                    <!--title of sub-->
+                    <h3 name="project-title">PL1- programming language 3/2 CAINTA CAMPUS</h3>
+                    <!--additional bottom-->
+                    <div class="project-info">
+                        <div class="detail">
+                            <!--notif sign: this will show the new post-->
+                            <!-- <p id="counterPost 2">3</p> -->
+                            <!--the schedule of each classes-->
+                            <p name="schedule">Date:<span value="week">T TH S</span>-<span value="time">04:00 - 05:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--################## CONTAINER 4 ##############################-->
+                <div class="project-container">
+                    <!--this will show on the top of container-->
+                    <div class="project">
+                        <!--top-menu///color bar-->
+                        <div class="colorBar4"></div>
+                        <div class="top-menu">
+                            <!--the 3 dot on the right side of container-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg>
+                        </div>
+                        <!--profile-->
+                        <img src="profile4.jpg" class="profile4" alt="">
+                        <!--label as teachers name-->
+                        <label for="teacherName" class="project-mentor">Mrs. John Doe</label>
+                    </div>
+                    <!--this is the details of sub. this will show on the bottom of the container-->
+                    <!--title of sub-->
+                    <h3 name="project-title">OPERATING SYSTEM 1/3 - 2ND TRIME_CAINTA</h3>
+                    <!--additional bottom-->
+                    <div class="project-info">
+                        <div class="detail">
+                            <!--notif sign: this will show the new post-->
+                            <!-- <p id="counterPost 2">3</p> -->
+                            <!--the schedule of each classes-->
+                            <p name="schedule">Date:<span value="week">T TH S</span>-<span value="time">04:00 - 05:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--class container-->
+            </div>
+            <!--whole top-nav-->
+        </div>
+    </article>
+    <!--#################################################-->
+    <nav id="mainNav">Nav</nav>
+    <!--#################################################-->
+    <div id="rightNav">
+        <div class="calendar">Carlendar</div>
+        <!--#################################################-->
+        <div class="task">
+            <p>today task</p>
+        </div>
+    </div>
+
+
+    <!--link jscript-->
+    <script src="view.js"></script>
+</body>
+
+</html>

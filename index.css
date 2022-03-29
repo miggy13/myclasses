@@ -1,0 +1,96 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header" "nav article rightNav";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 15% 1fr 20%;
+    grid-gap: 10px;
+    height: 200vh;
+    margin: 0;
+    /**/
+    background-color: #ebecf0;
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#mainArticle {
+    grid-area: article;
+    border-radius: 10px;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#rightNav {
+    grid-area: rightNav;
+}
+
+header,
+nav {
+    padding: 20px;
+    background-color: gold;
+}
+
+
+/*starting*/
+
+article,
+div {
+    background-color: #ffffff;
+}
+
+.top {
+    background-color: #041662;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.actionBtn {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.float-right {
+    background-color: #041662;
+    margin-left: 85vh;
+}
+
+.bi-book {
+    margin-top: 10px;
+}
+
+.icon {
+    color: black;
+}
+
+.container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 63.8%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.bi-search {
+    background-color: rgb(40, 114, 252);
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    outline: none;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.searchBar {
+    color: black;
+}
