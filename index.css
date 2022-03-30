@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
 body {
     display: grid;
     grid-template-areas: "header header header" "nav article rightNav";
@@ -17,7 +24,6 @@ body {
 
 #mainArticle {
     grid-area: article;
-    border-radius: 10px;
 }
 
 #mainNav {
@@ -28,69 +34,341 @@ body {
     grid-area: rightNav;
 }
 
-header,
+body header {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
 nav {
     padding: 20px;
-    background-color: gold;
+    background-color: #041662;
+    color: #ffffff;
+    border-top-right-radius: 20px;
 }
 
 
 /*starting*/
 
 article,
-div {
-    background-color: #ffffff;
-}
+div {}
 
-.top {
-    background-color: #041662;
+.container {
     margin: 0 auto;
-    color: #ffffff;
-    padding: 20px;
+}
+
+.container header {
+    background: #041662;
     display: flex;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    margin: 0% auto;
+    position: relative;
+    width: auto;
+    padding: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
-.actionBtn {
-    margin-left: 10px;
-    margin-top: 40px;
+.container h1,
+svg {
+    margin: 10px;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 3rem;
 }
 
-.float-right {
-    background-color: #041662;
-    margin-left: 85vh;
+
+/* 
+.searchBar {
+    margin-left: 100px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    background: none;
+} */
+
+.toggle-btns {
+    background: aquamarine;
+    display: flex;
+    padding-left: 30px;
 }
 
-.bi-book {
+.toggle-btns input {
+    height: 33px;
     margin-top: 10px;
 }
 
-.icon {
-    color: black;
+.toggle-btns svg {
+    width: 50px;
+    background-color: #888;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 63.8%;
-    transform: translate(-50%, -50%);
-    color: black;
+.toggle-btns svg:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btns .active {
+    /*this is the active style for button of svg*/
+    background: white;
+    color: rgb(233, 13, 13);
+}
+
+.filter {
+    color: rgb(138, 134, 134);
+    margin-left: 50px;
+    margin-top: 12px;
+    background: none;
+}
+
+.filter select {
+    padding: 7px;
+}
+
+.class {
+    background-color: transparent;
+}
+
+.class-container {
     background-color: #ffffff;
+    padding: 1px;
+    padding-top: 50px;
+}
+
+.class-container .class {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.class-container .class:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.class .class-teacher {
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+.class .class-title,
+.class-info {
+    color: rgb(0, 0, 0);
+}
+
+
+/*for list*/
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.list .class {
+    display: grid;
+    grid-template-columns: 100px 1fr 360px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+}
+
+
+/*top menu for list*/
+
+.list .class .top-menu {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    justify-self: end;
+    padding-left: 95.10%;
+}
+
+.list .top-menu svg {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.list .class .profile-img {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: center;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-flex;
+}
+
+.list .class .class-title {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.list .class .class-teacher {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-right: 4rem;
+}
+
+.list .class .class-info {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.list .class-info .detail .info {
     display: flex;
 }
 
-.bi-search {
-    background-color: rgb(40, 114, 252);
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-    outline: none;
-    margin: 0 auto;
+.list .detail .info svg {
+    width: 40px;
+    font-size: 1.2rem;
     color: #ffffff;
 }
 
-.searchBar {
-    color: black;
+.list .flex {
+    /*second details*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*for grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.grid .detail .info {
+    display: flex;
+}
+
+.grid .info svg {
+    width: 30px;
+    font-size: 1.2rem;
+}
+
+.grid .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*top menu for grid*/
+
+.grid .class {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid .class .top-menu {
+    margin-left: auto;
+}
+
+.grid .top-menu svg {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.grid .profile-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.grid .class-title,
+.class-teacher,
+.class-info {
+    margin-bottom: 1rem;
+}
+
+
+/**/
+
+.list #container1 {
+    background-color: #041662;
+}
+
+.grid #cont1 {
+    border: 5px solid #041662;
+}
+
+.list #container2 {
+    background-color: #637cf0;
+}
+
+.grid #cont2 {
+    border: 5px solid #637cf0;
+}
+
+.list #container3 {
+    background-color: #c098c8;
+}
+
+.grid #cont3 {
+    border: 5px solid #c098c8;
+}
+
+.list #container4 {
+    background-color: #e85858;
+}
+
+.grid #cont4 {
+    border: 5px solid #e85858;
+}
+
+.list #container5 {
+    background-color: #f87030;
+}
+
+.grid #cont5 {
+    border: 5px solid #f87030;
+}
+
+.list #container6 {
+    background-color: #b8d0c8;
+}
+
+.grid #cont6 {
+    border: 5px solid #b8d0c8;
+}
+
+.list #container7 {
+    background-color: #f0a018;
+}
+
+.grid #cont7 {
+    border: 5px solid #f0a018;
+}
+
+
+/*for rightNav*/
+
+
+/*this include calendar and task*/
+
+.calendar {
+    background-color: #041662;
+    color: #ffffff;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.task {
+    background-color: #ffffff;
+    padding-top: 50%;
+    padding-bottom: 50%;
 }
