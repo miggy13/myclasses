@@ -37,25 +37,28 @@
                     <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
                   </svg>
 
-
-                <!--for search bar-->
-                <!-- <div class="searchBar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="background: #5865f2; padding: 5px; color: #ffffff; border-top-left-radius: 50%;border-bottom-left-radius: 50%;" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg>
-                    <input type="text" placeholder="Search classes" style="border: none; border-bottom: 1px solid #ccc; margin-left: -10px;">
-                </div> -->
+                <!--for searchBar-->
+                <div class="searchBar">
+                    <form action="https://www.google.com/search" method="get" class="search-bar">
+                        <input type="text" placeholder="Search Classes" name="q">
+                        <button type="button" id="searchBtn" title="searchBTN">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+  </button>
+                    </form>
+                </div>
 
 
                 <!--for filter-->
-                <div class="filter">
+                <!-- <div class="filter">
                     <label for="filter">Filter</label>
                     <select aria-label="filter" name="filter" id="sort">
                       <option value="All">All Classes</option>
                       <option value="class">Classes</option>
                       <option value="withdraw">Withdraw</option>
                     </select>
-                </div>
+                </div> -->
             </div>
 
 
@@ -385,8 +388,89 @@
         <div class="calendar">Carlendar</div>
         <!--#################################################-->
         <div class="task">
-            <p>today task</p>
+            <div class="wrapper">
+
+                <div class="task-menu">
+                    <h4>Today Task</h4>
+                </div>
+
+                <div class="task-cont">
+
+                    <div class="task-data activetask">
+                        <div class="tile">
+                            <button id="done" type="submit" aria-label="Aria Name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                  </svg>
+                            </button>
+                            <button id="cancel" type="button" aria-label="Aria Name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                  </svg>
+                            </button>
+
+                            <div class="blockBar"></div>
+
+                            <div class="taskdetail">
+                                <p><strong>To do:</strong> <span>zoom meeting at 10pm</span></p>
+                                <p><strong>Course:</strong> <span>BCSC</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--task that already done-->
+                <div class="task-data done">
+                    <div class="tile">
+                        <button id="done" type="submit" aria-label="Aria Name">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </button>
+                        <button id="cancel" type="button" aria-label="Aria Name">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                              </svg>
+                        </button>
+
+                        <div class="blockBar"></div>
+
+                        <div class="taskdetail">
+                            <p><strong>To do:</strong> <span>zoom meeting at 10pm</span></p>
+                            <p><strong>Course:</strong> <span>BCSC</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="task-data done">
+                <div class="tile">
+                    <button id="done" type="submit" aria-label="Aria Name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
+                    </button>
+                    <button id="cancel" type="button" aria-label="Aria Name">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                          </svg>
+                    </button>
+
+                    <div class="blockBar"></div>
+
+                    <div class="taskdetail">
+                        <p><strong>To do:</strong> <span>zoom meeting at 10pm</span></p>
+                        <p><strong>Course:</strong> <span>BCSC</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
+    </div>
     </div>
 
 
