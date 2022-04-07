@@ -31,11 +31,6 @@ body {
     overflow: hidden;
 }
 
-
-/* body::-webkit-scrollbar {
-    display: none;
-} */
-
 #pageHeader {
     grid-area: header;
 }
@@ -65,6 +60,9 @@ nav {
     border-top-right-radius: 20px;
     height: 85vh;
 }
+
+
+/*for calendar*/
 
 #rightNav {
     background: #041662;

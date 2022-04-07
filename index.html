@@ -26,24 +26,24 @@
                     <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
                   </svg>
                 <h1>My Classes</h1>
-
-                <div class="Add-class">
-                    <!-- <button aria-labelledby="Add">Add</button> -->
-                </div>
             </header>
 
 
+            <!--toggle div-->
             <div class="toggle-btns">
+
+                <!--list icon // transform in list by default-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi-list-ul list-layout active" viewBox="0 0 16 16" onclick="toggleView(event);">
                     <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                   </svg>
-
+                <!--grid icon// it can transform this to grid layout-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi-grid grid-layout" viewBox="0 0 16 16" onclick="toggleView(event);">
                     <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
                   </svg>
 
                 <!--for searchBar-->
                 <div class="searchBar">
+                    <!--the link in form is for example only-->
                     <form action="https://www.google.com/search" method="get" class="search-bar">
                         <input type="text" placeholder="Search Classes" name="q">
                         <button type="button" id="searchBtn" title="searchBTN">
@@ -54,12 +54,10 @@
                     </form>
                 </div>
 
-                <!-- Trigger/Open The Modal -->
+                <!-- this is the join-class modal-->
                 <button id="myBtn">Join Class</button>
-
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
-
                     <!-- Modal content -->
                     <div class="modal-content">
                         <header>
@@ -69,28 +67,34 @@
                         <input class="input-class" type="text" placeholder="Input your class here.">
                         <button class="enter-join">Enter</button>
                     </div>
-
                 </div>
+
+                <!--end of toggle-->
             </div>
 
-
+            <!--this is the for classes// it connects in the grid and list icons in toggle-->
             <div class="class-container list">
+
                 <!--container1-->
                 <div class="class" id="cont1">
-
                     <div class="top-menu" id="container1">
+                        <!--3 dot icon //  can work as dropdown -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-three-dots-vertical" viewBox="0 0 16 16">
                                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                         </svg>
+                        <!--this for dropdown-->
                         <div class="dropdown-content">
                             <a href="#">Leave</a>
                         </div>
                     </div>
-                    <img src="avatar1.jpg" alt="" class="profile-img">
 
+                    <!--profile image of teacher-->
+                    <img src="avatar1.jpg" alt="" class="profile-img">
+                    <!--teachers name-->
                     <h4 class="class-teacher">Mrs. John Doe
                         <BR>
                         <p style="font-size: 15px;">Teacher</p>
+                        <!--this type class incase you want to specify to group or class-->
                         <!-- <p class="type">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                             <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
@@ -98,11 +102,16 @@
                           </svg> Class
                         </p> -->
                     </h4>
+
+                    <!--title of sub-->
                     <h2 class="class-title">INFORMATION COMMUNICATION AND TECHNOLOGY</h2>
 
+                    <!--other info about subject // include: task no or push notif and shedule of subject-->
                     <div class="class-info" style="background-color: transparent; color: black;">
+                        <!--detail 1-->
                         <div class="detail">
                             <div class="info">
+                                <!--icons for task-->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color:#1a51c6" class="bi-list-task" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
                                     <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
@@ -111,17 +120,19 @@
                                 <p>Total task: <span class="notif" id="counter">3</span></p>
                             </div>
                         </div>
+                        <!--detail 2-->
                         <div class="detail flex">
                             <div class="info">
+                                <!--icons for schedule-->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color:#1a51c6" class="bi-calendar-event" viewBox="0 0 16 16">
                                     <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
                                     <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                                   </svg>
-
                                 <p>Schedule: T TH S - 04:00 - 05:00 pm</p>
                             </div>
                         </div>
                     </div>
+                    <!--end of container 1-->
                 </div>
 
 
@@ -434,11 +445,14 @@
         </div>
 
     </article>
-    <!--#################################################-->
+    <!--#####################this is left nav############################-->
     <nav id="mainNav">Nav</nav>
-    <!--#################################################-->
+    <!--#####################this is right nav############################-->
     <div id="rightNav" class="rightnav">
 
+        <!--include: calendar, calendar link and task-->
+
+        <!--this is calendar-->
         <div class="calendar">
 
             <div class="calendar-body">
@@ -449,30 +463,30 @@
             </div>
             <a href="http://127.0.0.1:5501/calendar.html" class="full-Calendar">view calendar</a>
         </div>
-        <!--#################################################-->
+        <!--this is task container-->
         <div class="task">
-
             <div class="task-menu">
                 <h4>Today Task</h4>
             </div>
             <div class="wrapper">
                 <div class="task-cont">
-
                     <div class="task-data ">
                         <div class="tile activetask">
+                            <!--the done btn-->
                             <button id="done" type="submit" aria-label="Aria Name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                                   </svg>
                             </button>
+                            <!--cancel btn-->
                             <button id="cancel" type="button" aria-label="Aria Name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
                                   </svg>
                             </button>
-
+                            <!--blockbar as hr Vertical-->
                             <div class="blockBar"></div>
-
+                            <!--details of the task-->
                             <div class="taskdetail">
                                 <p><strong>To do:</strong> <span>zoom meeting at 10pm</span></p>
                                 <p><strong>Course:</strong> <span>BCSC</span></p>
@@ -504,10 +518,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div class="task-data done">
                     <div class="tile">
                         <button id="done" type="submit" aria-label="Aria Name">
@@ -538,8 +548,12 @@
 
 
     <!--link jscript-->
+
+    <!--this used in grid-layout and list-layout-->
     <script src="view.js"></script>
+    <!--this is for calendar //  responsive date tracker-->
     <script src="datetracter.js"></script>
+    <!--modal for dropdown-->
     <script src="modal.js"></script>
 </body>
 
